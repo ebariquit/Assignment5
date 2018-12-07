@@ -18,6 +18,7 @@ class BarcodeScannerBST{
 		BinarySearchTree<Product> bst;
 		// Constructor
 		BarcodeScannerBST(){}
+		// Scanning method
 		bool scan(long upc){ 
 			Product *p = new Product();
 			p->setUPC(upc);			

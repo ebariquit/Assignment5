@@ -13,6 +13,7 @@
 
 #include <iostream>
 #include <list>
+#include <cstdlib>
 using namespace std;
 
 template <class T>
@@ -39,7 +40,6 @@ class HashTable{
 template <class T>
 HashTable<T>::HashTable() {
 	table = new list<T>[size];
-	//table->resize(size);
 }
 template <class T>
 void HashTable<T>::makeTableEmpty() {
@@ -71,13 +71,13 @@ bool HashTable<T>::search(T& item) {
 		if(*i == item) {
 			return true;
 		}
-		else { return false;}
+		else { return false; }
 	}
 }
 
 template <class T>
 int HashTable<T>::hashFunction(T& item) {
-	return (item.key % size);
+	return abs(item.key % size);
 }
 
 #endif

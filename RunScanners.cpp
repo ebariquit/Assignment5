@@ -44,8 +44,8 @@ int main() {
 		// Insert into data structures
 		bst.bst.insert(product);
 		arr.array[i]=product;
+		hTable.ht.insert(product);		
 		i++;
-		hTable.ht.insert(product);
 	}
 	// Enter(Scan) a UPC
 	long searchUPC;

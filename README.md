@@ -2,7 +2,7 @@
 
 Bellevue College
 
-CS300
+CS300 - Data Structures
 
 Objective: compare runtimes for searching different data structures (binary trees, hashtables, and arrays) containing a high volume of elements.
 
